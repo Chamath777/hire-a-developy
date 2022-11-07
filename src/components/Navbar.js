@@ -11,11 +11,11 @@ const AppNavbar = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <Navbar>
+    <Nav>
       <Nav.Link eventKey="login">Login</Nav.Link>
       <Nav.link eventKey="signup">Signup</Nav.link>
       <Nav.link eventKey="profile">Profile</Nav.link>
       <Nav.link eventKey="products">Products</Nav.link>
-    </Navbar>
+    </Nav>
   );
 };
