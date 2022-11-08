@@ -15,7 +15,7 @@ export default function Footer() {
         <a href="https://github.com/MarkBrooks1985" className="hover:underline">
           Mark Brooks
         </a>
-        . All Rights Reserved.
+        .&nbsp; All Rights Reserved.
       </span>
       <ul className="flex flex-wrap items-center mt-3 text-sm text-white sm:mt-0">
         <li>
