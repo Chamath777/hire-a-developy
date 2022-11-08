@@ -3,7 +3,7 @@ import { useQuery } from "@apollo/client";
 
 const Home = () => {
   return (
-    <div className="bg-slate-500">
+    <div className="bg-slate-500 my-96 align-middle">
       <div className="text-white">
         <h1>Welcome to Hire A Developy!</h1>
       </div>
