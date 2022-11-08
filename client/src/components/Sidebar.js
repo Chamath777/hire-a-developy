@@ -4,8 +4,8 @@ import Logo from "../assets/images/logo.png";
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="min-h-screen flex flex-row bg-slate-400">
-      <div className="flex flex-col w-56 bg-slate-500 rounded-r-3xl overflow-hidden">
+    <div className="min-h-screen flex flex-row bg-slate-500 absolute left-0">
+      <div className="flex flex-col w-56 bg-slate-500 rounded-r-3xl overflow-hidden border-solid border-2 border-white">
         <div className="flex items-center justify-center h-20 shadow-md">
           <h1 className="text-3xl uppercase text-indigo-400">
             <img src={Logo} className="p-5" alt="Hire A Developy Logo" />
