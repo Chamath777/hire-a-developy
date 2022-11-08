@@ -8,8 +8,12 @@ export default function Footer() {
     <footer className="p-4 bg-slate-500 md:flex md:items-center md:justify-between md:p-6 fixed bottom-0 w-full">
       <span className="text-sm text-white sm:text-center">
         © 2022{" "}
-        <a href="https://flowbite.com/" className="hover:underline">
-          Flowbite™
+        <a href="https://github.com/Chamath777" className="hover:underline">
+          Chamath De Silva
+        </a>
+        &nbsp; and &nbsp;
+        <a href="https://github.com/MarkBrooks1985" className="hover:underline">
+          Mark Brooks
         </a>
         . All Rights Reserved.
       </span>
