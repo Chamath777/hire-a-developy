@@ -8,7 +8,7 @@ export default function Sidebar() {
       <div className="flex flex-col w-56 bg-slate-500 rounded-r-3xl overflow-hidden">
         <div className="flex items-center justify-center h-20 shadow-md">
           <h1 className="text-3xl uppercase text-indigo-400">
-            <img src={Logo} alt="Hire A Developy Logo" />
+            <img src={Logo} className="p-5" alt="Hire A Developy Logo" />
           </h1>
         </div>
         <ul className="flex flex-col py-4">
