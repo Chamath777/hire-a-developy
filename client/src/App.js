@@ -45,15 +45,15 @@ function App() {
           <Header />
           <Sidebar />
           <Routes>
-            
+
             // For Routes to be done
 
-            <Route path="/" element={<Home />} />
+            {/* <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/me" element={<Profile />} />
             <Route path="/profiles/:username" element={<Profile />} />
-            <Route path="/thoughts/:thoughtId" element={<SingleThought />} />
+            <Route path="/thoughts/:thoughtId" element={<SingleThought />} /> */}
           </Routes>
         </div>
       </Router>
