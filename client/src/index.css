@@ -1001,12 +1001,7 @@ a:hover {
   border: 1px solid transparent;
   outline: none;
   color: #1a1a1a;
-  background-color: #aeaeae;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
-
-.btn:hover {
-  background-color: #cecece;
 }
 
 .btn.btn-squared {
@@ -1030,13 +1025,13 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
+  /* background-color: #2d3e50; */
   color: #d9e9e8;
 }
 
-.btn.btn-primary:hover {
+/* .btn.btn-primary:hover {
   background-color: #57779a;
-}
+} */
 
 .btn.btn-danger {
   background-color: #e64c66;
@@ -1061,45 +1056,45 @@ a:hover {
   color: #1a1a1a;
 }
 
-.btn.btn-light:hover {
+/* .btn.btn-light:hover {
   background-color: #84b8b4;
-}
+} */
 
-.btn.btn-dark {
+/* .btn.btn-dark {
   background-color: #1a1a1a;
   color: #d9e9e8;
-}
+} */
 
-.btn.btn-dark:hover {
+/* .btn.btn-dark:hover {
   background-color: #5f5f5f;
-}
+} */
 
-.btn.btn-white {
+/* .btn.btn-white {
   background-color: #ffffff;
   color: #1a1a1a;
-}
+} */
 
-.btn.btn-white:hover {
+/* .btn.btn-white:hover {
   background-color: #cccccc;
-}
-
+} */
+/* 
 .btn.btn-black {
   background-color: #000000;
   color: #ffffff;
-}
+} */
 
-.btn.btn-black:hover {
+/* .btn.btn-black:hover {
   background-color: #666666;
-}
+} */
 
 .btn.btn-link {
   background-color: #1b89bc;
   color: #ffffff;
 }
 
-.btn.btn-link:hover {
+/* .btn.btn-link:hover {
   background-color: #31a9e1;
-}
+} */
 
 .card {
   border: 1px solid #1a1a1a;
@@ -1108,7 +1103,6 @@ a:hover {
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: #0479f6;
   color: #d9e9e8;
 }
 
