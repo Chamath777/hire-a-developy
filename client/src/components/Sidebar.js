@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Logo from "../assets/images/logo.png";
 
+import Home from "../pages/Home";
+import Login from "../pages/Login";
+
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
   return (
@@ -12,7 +15,7 @@ export default function Sidebar() {
         <ul className="flex flex-col py-4">
           <li>
             <a
-              href="#"
+              href="/"
               className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-white hover:text-gray-800"
             >
               <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-white">
@@ -23,7 +26,7 @@ export default function Sidebar() {
           </li>
           <li>
             <a
-              href="#"
+              href="/login"
               className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-white hover:text-gray-800"
             >
               <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-white">
@@ -34,7 +37,7 @@ export default function Sidebar() {
           </li>
           <li>
             <a
-              href="#"
+              href="/logout"
               className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-white hover:text-gray-800"
             >
               <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-white">
@@ -45,7 +48,18 @@ export default function Sidebar() {
           </li>
           <li>
             <a
-              href="#"
+              href="/signup"
+              className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-white hover:text-gray-800"
+            >
+              <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-white">
+                <i className="bx bx-up-arrow"></i>
+              </span>
+              <span className="text-sm font-medium">Signup</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/Profile"
               className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-white hover:text-gray-800"
             >
               <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-white">
@@ -56,7 +70,7 @@ export default function Sidebar() {
           </li>
           <li>
             <a
-              href="#"
+              href="/Products"
               className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-white hover:text-gray-800"
             >
               <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-white">
