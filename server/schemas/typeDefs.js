@@ -6,7 +6,9 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
+    type: String
     inquiry: [inquiry]!
+
   }
 
   type inquiry {
