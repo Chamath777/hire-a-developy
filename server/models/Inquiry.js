@@ -40,6 +40,6 @@ const inquirySchema = new Schema({
   ],
 });
 
-const inquiry = model("Inquiry", inquirySchema);
+const Inquiry = model("Inquiry", inquirySchema);
 
 module.exports = Inquiry;
