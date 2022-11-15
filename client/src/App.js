@@ -12,7 +12,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import Profile from "./pages/Profile";
+import Developer from "./pages/Developer";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
@@ -57,8 +57,8 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
-                <Route path="/me" element={<Profile />} />
-                <Route path="/profiles/:username" element={<Profile />} />
+                <Route path="/Developer" element={<Developer />} />
+                {/* <Route path="/Profiles/:username" element={<Profile />} /> */}
                 {/* <Route path="/thoughts/:thoughtId" element={<SingleThought />} /> */}
               </Routes>
             </div>
