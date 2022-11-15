@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <div className="bg-slate-500 my-96 align-middle">
       <div>
-        <h1 className="text-white text-lg font-bold">
-          Welcome to Hire A Developy!
-        </h1>
+      <Products>
+        
+      </Products>
       </div>
       <div className="container max-w-screen-lg mx-auto pb-10">
         

@@ -2,13 +2,8 @@ import React from "react";
 import { Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
-<<<<<<< HEAD
 import InquiryForm from '../components/InquiryForm/index';
 import InquiryList from '../components/InquiryList/index';
-=======
-import InquiryForm from "../components/InquiryForm";
-import InquiryList from "../components/InquiryList";
->>>>>>> c387dc921ff411b44708db346f9ddcbfca4b4f79
 
 import { QUERY_USER, QUERY_ME } from "../utils/queries";
 

@@ -23,7 +23,8 @@ const userSchema = new Schema({
   //Identification whether it is a user or a seller
   type: {
     type: String,
-    required:true,
+    
+   
   },
 });
 

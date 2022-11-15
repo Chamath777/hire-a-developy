@@ -8,24 +8,24 @@ import { Link } from "react-router-dom";
 export default function CardComponent() {
     const posts = [
         {
-            title: "React Tailwind Card with Grid 1",
-            img: "https://cdn.pixabay.com/photo/2019/12/17/14/43/christmas-4701783__340.png",
-            content: "react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content"
+            title: "STATIC",
+            img: "../cl",
+            content: "Basic Web pages for small businesses"
         },
         {
-            title: "React Tailwind Card with Grid 2",
-            img: "https://cdn.pixabay.com/photo/2019/12/17/14/43/christmas-4701783__340.png",
-            content: "react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content"
+            title: "DYNAMIC",
+            img: "",
+            content: "Web pages with dynamic content"
         },
         {
-            title: "React Tailwind Card with Grid 3",
-            img: "https://cdn.pixabay.com/photo/2019/12/17/14/43/christmas-4701783__340.png",
-            content: "react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content"
+            title: "DYNAMIC + DB",
+            img: "",
+            content: "Web pages with dynamic content and data based on"
         },
         {
-            title: "React Tailwind Card with Grid 4",
-            img: "https://cdn.pixabay.com/photo/2019/12/17/14/43/christmas-4701783__340.png",
-            content: "react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content"
+            title: "DYNAMIC + DB + STRIPE",
+            img: "",
+            content: "For E-Commerce Web sites"
         },
     ];
     return (
@@ -47,7 +47,7 @@ export default function CardComponent() {
                             {items.content}
                             </p>
                             <button className="px-4 py-2 text-sm text-blue-100 bg-blue-500 rounded shadow">
-                                Read more
+                                Inquire
                             </button>
                         </div>
                     </div>
