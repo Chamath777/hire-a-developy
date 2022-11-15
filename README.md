@@ -1,4 +1,4 @@
-# Hire a Developy 
+# Hire a Developy
 
 ## User Story
 
@@ -20,32 +20,32 @@ IF I WANT TO go ahead with the particular developer,
 
 I WOULD BE able to inquire and offer the contract.
 
-
 # Introduction
 
 "Hire A Developy" is a Web Solution services providing web site. It is an E-Commerce website where customer can find a developer without any intermediate. Customer can browse the developer's profile and find the most suitable developer according to their requirements. Customer can inquire the Web Developer and clarify details before finalized the purchase.
 
 # Mock
 
-  ## Structure planing
- ![sketch1](./client/src/assets/images/IMG_4882.jpg)
+## Structure planing
 
-  ## Wire Frame
+![sketch1](./client/src/assets/images/IMG_4882.jpg)
 
-  ![sketch2](./client/src/assets/images/finalprojwireframe.png)
+## Wire Frame
 
-  ## Flow Chart
+![sketch2](./client/src/assets/images/finalprojwireframe.png)
 
-  ![Flow Chart](./client/src/assets/images/Untitled.png) 
+## Flow Chart
+
+![Flow Chart](./client/src/assets/images/Untitled.png)
 
 # Tools used
-   
+
     🔗 MongoDB
-    
-    🔗 Express JS 
+
+    🔗 Express JS
 
     🔗 REACT
-    
+
     🔗 Node JS
 
     // CSS Framework
@@ -56,14 +56,13 @@ I WOULD BE able to inquire and offer the contract.
 
     - Google (https://www.google.com/)
 
-
 # Home page
 
-![home](./client/src/assets/images/)
+![home](./client/src/assets/images/screen1.png)
 
-# Features to be added in Future 
+# Features to be added in Future
 
-As we going through our work on project we realized some of the features to be added in future. 
+As we going through our work on project we realized some of the features to be added in future.
 
 This includes,
 
@@ -73,7 +72,7 @@ This includes,
 
     - Payment option at the end of the agreement of both Customer and Developer (Using Stripe)
 
-## Obstacles 
+## Obstacles
 
 - Git command failures
 
@@ -83,7 +82,7 @@ This includes,
 
 - Responsiveness issues with Tailwind CSS
 
-- Errors and missing files when Seeding and installing 
+- Errors and missing files when Seeding and installing
 
 ## Authors
 
@@ -91,21 +90,17 @@ This includes,
 
 - Chamath (Mainly Back End, README file, Presentation)
 
-
 ## Deployed URL
 
-  https://chamath777.github.io/hire-a-developy/
+https://blooming-peak-18055.herokuapp.com/
 
 ## Github URL
 
-  https://github.com/Chamath777/hire-a-developy
+https://github.com/Chamath777/hire-a-developy
 
 ## Heroku URL
 
-
-
 ## Presentation link
-
 
 ⚡️ Fun fact...
 
