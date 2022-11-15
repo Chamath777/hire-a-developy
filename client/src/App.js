@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
-} from '@apollo/client';
-import { setContext } from '@apollo/client/link/context';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from './pages/home';
 import Signup from './pages/Signup';
@@ -16,21 +16,23 @@ import Profile from './pages/Profile';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Products from './pages/Products'
+import "./App.css";
+import Sidebar from "./components/Sidebar";
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: "/graphql",
 });
 
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
-  const token = localStorage.getItem('id_token');
+  const token = localStorage.getItem("id_token");
   // return the headers to the context so httpLink can read them
   return {
     headers: {
       ...headers,
-      authorization: token ? `Bearer ${token}` : '',
+      authorization: token ? `Bearer ${token}` : "",
     },
   };
 });
@@ -45,31 +47,21 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className="flex-column justify-flex-start min-100-vh">
+        <div className="App">
           <Header />
-          <div className="container">
-            <Routes>
-              <Route 
-                exact path="/login"
-                element={<Login />}
-              />
-              <Route 
-                path="/" 
-                element={<Home />}
-              />
-              <Route 
-                path="/signup" 
-                element={<Signup />}
-              />
-              <Route 
-                path="/me" 
-                element={<Profile />}
-              />
-              <Route 
-                path="/profiles/:username" 
-                element={<Profile />}
-              />
-              <Route 
+          <div className="flex flex-col md:flex-row flex-grow">
+            <div className="flex">
+              <Sidebar />
+            </div>
+            <div className="flex-grow">
+              <Routes>
+                {/* // For Routes to be done */}
+                <Route path="/" element={<Home />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/signup" element={<Signup />} />
+                <Route path="/me" element={<Profile />} />
+                <Route path="/profiles/:username" element={<Profile />} />
+                <Route 
                 path="/inquiry/:inquiryId" 
                 element={<SingleInquiry />}
               />
@@ -77,7 +69,10 @@ function App() {
                 path="/products" 
                 element={<Products />}
               />
-            </Routes>
+                
+                {/* <Route path="/thoughts/:thoughtId" element={<SingleThought />} /> */}
+              </Routes>
+            </div>
           </div>
           <Footer />
         </div>

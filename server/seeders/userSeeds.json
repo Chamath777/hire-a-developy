@@ -9,7 +9,11 @@
     "username": "Max Kanat-Alexander",
     "email": "mkanatalexander@techfriends.dev",
     "password": "password02",
+<<<<<<< HEAD
     "type": "customer"
+=======
+    "type": "developer"
+>>>>>>> c387dc921ff411b44708db346f9ddcbfca4b4f79
   },
   {
     "username": "Why The Lucky Stiff",

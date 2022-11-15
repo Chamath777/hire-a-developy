@@ -1,14 +1,14 @@
-const { AuthenticationError } = require('apollo-server-express');
-const { User, Inquiry } = require('../models');
-const { signToken } = require('../utils/auth');
+const { AuthenticationError } = require("apollo-server-express");
+const { User, Inquiry } = require("../models");
+const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find().populate('inquiry');
+      return User.find().populate("inquiry");
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate('inquiry');
+      return User.findOne({ username }).populate("inquiry");
     },
     inquiry: async (parent, { username }) => {
       const params = username ? { username } : {};
@@ -19,9 +19,9 @@ const resolvers = {
     },
     me: async (parent, args, context) => {
       if (context.user) {
-        return User.findOne({ _id: context.user._id }).populate('inquiry');
+        return User.findOne({ _id: context.user._id }).populate("inquiry");
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
   },
 
@@ -35,13 +35,13 @@ const resolvers = {
       const user = await User.findOne({ email });
 
       if (!user) {
-        throw new AuthenticationError('No user found with this email address');
+        throw new AuthenticationError("No user found with this email address");
       }
 
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError("Incorrect credentials");
       }
 
       const token = signToken(user);
@@ -62,7 +62,7 @@ const resolvers = {
 
         return inquiry;
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
     addComment: async (parent, { inquiryId, commentText }, context) => {
       if (context.user) {
@@ -79,7 +79,7 @@ const resolvers = {
           }
         );
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
     removeInquiry: async (parent, { inquiryId }, context) => {
       if (context.user) {
@@ -95,7 +95,7 @@ const resolvers = {
 
         return inquiry;
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
     removeComment: async (parent, { inquiryId, commentId }, context) => {
       if (context.user) {
@@ -112,7 +112,7 @@ const resolvers = {
           { new: true }
         );
       }
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError("You need to be logged in!");
     },
   },
 };
