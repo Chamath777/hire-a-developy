@@ -89,7 +89,7 @@ This includes,
 
 - Mark (Mainly Front End, Presentation)
 
-- Chamath (Mainly Back End, README file)
+- Chamath (Mainly Back End, README file, Presentation)
 
 
 ## Deployed URL
