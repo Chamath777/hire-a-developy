@@ -3,21 +3,15 @@ import { useQuery } from "@apollo/client";
 
 import Products from "../components/Products/index";
 
-const Home = () => {
+const Product = () => {
   return (
     <div className="bg-slate-500 my-96 align-middle">
       <div>
-      <Products>
-        
-      </Products>
+        <Products></Products>
       </div>
-      <div className="container max-w-screen-lg mx-auto pb-10">
-        
-
-        
-      </div>
+      <div className="container max-w-screen-lg mx-auto pb-10"></div>
     </div>
   );
 };
 
-export default Home;
+export default Product;

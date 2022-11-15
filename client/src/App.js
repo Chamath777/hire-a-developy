@@ -8,24 +8,14 @@ import {
 import { setContext } from "@apollo/client/link/context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Home from './pages/home';
-import Signup from './pages/Signup';
-import Login from './pages/Login';
-import SingleInquiry from './pages/SingleInquiry';
-import Profile from './pages/Profile';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Products from './pages/Products'
 import "./App.css";
-<<<<<<< HEAD
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
+import Product from "./pages/Products";
 import Developer from "./pages/Developer";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-=======
->>>>>>> main
 import Sidebar from "./components/Sidebar";
 
 // Construct our main GraphQL API endpoint
@@ -68,23 +58,8 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
-<<<<<<< HEAD
                 <Route path="/Developer" element={<Developer />} />
-                {/* <Route path="/Profiles/:username" element={<Profile />} /> */}
-=======
-                <Route path="/me" element={<Profile />} />
-                <Route path="/profiles/:username" element={<Profile />} />
-                <Route 
-                path="/inquiry/:inquiryId" 
-                element={<SingleInquiry />}
-              />
-             /<Route 
-                path="/products" 
-                element={<Products />}
-              />
-                
->>>>>>> main
-                {/* <Route path="/thoughts/:thoughtId" element={<SingleThought />} /> */}
+                <Route path="/Products" element={<Product />} />
               </Routes>
             </div>
           </div>
