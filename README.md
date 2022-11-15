@@ -65,7 +65,13 @@ I WOULD BE able to inquire and offer the contract.
 
 As we going through our work on project we realized some of the features to be added in future. 
 
-This includes message dashboard, Payment option at the end of agreement of both Customer and Developer.
+This includes,
+
+    - Message dashboard
+
+    - Viewing profiles of both Customers and Developers
+
+    - Payment option at the end of the agreement of both Customer and Developer (Using Stripe)
 
 ## Obstacles 
 
@@ -74,6 +80,10 @@ This includes message dashboard, Payment option at the end of agreement of both 
 - Git merging failures & conflicts
 
 - Linking issues with Front end and back end
+
+- Responsiveness issues with Tailwind CSS
+
+- Errors and missing files when Seeding and installing 
 
 ## Authors
 
