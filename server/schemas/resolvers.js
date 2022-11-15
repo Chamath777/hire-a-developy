@@ -14,7 +14,7 @@ const resolvers = {
       const params = username ? { username } : {};
       return inquiry.find(params).sort({ createdAt: -1 });
     },
-    inquiry: async (parent, { inquiryId }) => {
+    inquiryById: async (parent, { inquiryId }) => {
       return inquiry.findOne({ _id: inquiryId });
     },
     me: async (parent, args, context) => {
@@ -48,7 +48,7 @@ const resolvers = {
 
       return { token, user };
     },
-    addinquiry: async (parent, { inquiryText }, context) => {
+    addInquiry: async (parent, { inquiryText }, context) => {
       if (context.user) {
         const inquiry = await inquiry.create({
           inquiryText,
@@ -81,7 +81,7 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    removeinquiry: async (parent, { inquiryId }, context) => {
+    removeInquiry: async (parent, { inquiryId }, context) => {
       if (context.user) {
         const inquiry = await inquiry.findOneAndDelete({
           _id: inquiryId,

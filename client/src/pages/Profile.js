@@ -2,8 +2,8 @@ import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import InquiryForm from '../components/InquiryForm';
-import InquiryList from '../components/InquiryList';
+import InquiryForm from '../components/InquiryForm/index';
+import InquiryList from '../components/InquiryList/index';
 
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
