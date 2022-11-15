@@ -4,9 +4,15 @@ import Logo from "../assets/images/logo.png";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Developer from "../pages/Developer";
+import Auth from "../utils/auth";
 
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
+
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
   return (
     <div className="min-h-screen flex flex-row bg-slate-500 fixed bottom-0 left-0">
       <div className="flex flex-col w-56 bg-slate-500 rounded-r-3xl overflow-hidden border-solid border-2 border-white">
@@ -25,39 +31,47 @@ export default function Sidebar() {
               <span className="text-sm font-medium">Home</span>
             </a>
           </li>
-          <li>
-            <a
-              href="/login"
-              className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-white hover:text-gray-800"
-            >
-              <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-white">
-                <i className="bx bx-log-in"></i>
-              </span>
-              <span className="text-sm font-medium">Login</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="/logout"
-              className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-white hover:text-gray-800"
-            >
-              <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-white">
-                <i className="bx bx-log-out"></i>
-              </span>
-              <span className="text-sm font-medium">Logout</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="/signup"
-              className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-white hover:text-gray-800"
-            >
-              <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-white">
-                <i className="bx bx-up-arrow"></i>
-              </span>
-              <span className="text-sm font-medium">Signup</span>
-            </a>
-          </li>
+          {Auth.loggedIn() ? (
+            <>
+              <li>
+                <a
+                  href="/logout"
+                  onClick={logout}
+                  className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-white hover:text-gray-800"
+                >
+                  <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-white">
+                    <i className="bx bx-log-out"></i>
+                  </span>
+                  <span className="text-sm font-medium">Logout</span>
+                </a>
+              </li>
+            </>
+          ) : (
+            <>
+              <li>
+                <a
+                  href="/login"
+                  className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-white hover:text-gray-800"
+                >
+                  <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-white">
+                    <i className="bx bx-log-in"></i>
+                  </span>
+                  <span className="text-sm font-medium">Login</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/signup"
+                  className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-white hover:text-gray-800"
+                >
+                  <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-white">
+                    <i className="bx bx-up-arrow"></i>
+                  </span>
+                  <span className="text-sm font-medium">Signup</span>
+                </a>
+              </li>
+            </>
+          )}
           <li>
             <a
               href="/Developer"
