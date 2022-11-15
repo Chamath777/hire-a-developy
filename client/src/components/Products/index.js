@@ -9,7 +9,7 @@ export default function CardComponent() {
     const posts = [
         {
             title: "STATIC",
-            img: "../cl",
+            img: "",
             content: "Basic Web pages for small businesses"
         },
         {
