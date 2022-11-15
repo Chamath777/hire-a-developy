@@ -78,7 +78,7 @@ const Login = (props) => {
                 </button>
               </form>
             )}
-            {Auth.loggedIn() && <Navigate to="/Profile" />}
+            {Auth.loggedIn() && <Navigate to="/" />}
 
             {error && (
               <div className="my-3 p-3 bg-danger text-white">
