@@ -5,21 +5,21 @@ const { signToken } = require("../utils/auth");
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find().populate("inquiry");
+      return User.find().populate("Inquiry");
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate("inquiry");
+      return User.findOne({ username }).populate("Inquiry");
     },
-    inquiry: async (parent, { username }) => {
+    Inquiry: async (parent, { username }) => {
       const params = username ? { username } : {};
-      return inquiry.find(params).sort({ createdAt: -1 });
+      return Inquiry.find(params).sort({ createdAt: -1 });
     },
-    inquiryById: async (parent, { inquiryId }) => {
-      return inquiry.findOne({ _id: inquiryId });
+    InquiryById: async (parent, { InquiryId }) => {
+      return Inquiry.findOne({ _id: InquiryId });
     },
     me: async (parent, args, context) => {
       if (context.user) {
-        return User.findOne({ _id: context.user._id }).populate("inquiry");
+        return User.findOne({ _id: context.user._id }).populate("Inquiry");
       }
       throw new AuthenticationError("You need to be logged in!");
     },
@@ -48,26 +48,26 @@ const resolvers = {
 
       return { token, user };
     },
-    addInquiry: async (parent, { inquiryText }, context) => {
+    addInquiry: async (parent, { InquiryText }, context) => {
       if (context.user) {
-        const inquiry = await inquiry.create({
-          inquiryText,
-          inquiryAuthor: context.user.username,
+        const Inquiry = await Inquiry.create({
+          InquiryText,
+          InquiryAuthor: context.user.username,
         });
 
         await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $addToSet: { inquiry: inquiry._id } }
+          { $addToSet: { Inquiry: Inquiry._id } }
         );
 
-        return inquiry;
+        return Inquiry;
       }
       throw new AuthenticationError("You need to be logged in!");
     },
-    addComment: async (parent, { inquiryId, commentText }, context) => {
+    addComment: async (parent, { InquiryId, commentText }, context) => {
       if (context.user) {
-        return inquiry.findOneAndUpdate(
-          { _id: inquiryId },
+        return Inquiry.findOneAndUpdate(
+          { _id: InquiryId },
           {
             $addToSet: {
               comments: { commentText, commentAuthor: context.user.username },
@@ -81,26 +81,26 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in!");
     },
-    removeInquiry: async (parent, { inquiryId }, context) => {
+    removeInquiry: async (parent, { InquiryId }, context) => {
       if (context.user) {
-        const inquiry = await inquiry.findOneAndDelete({
-          _id: inquiryId,
-          inquiryAuthor: context.user.username,
+        const Inquiry = await Inquiry.findOneAndDelete({
+          _id: InquiryId,
+          InquiryAuthor: context.user.username,
         });
 
         await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $pull: { inquiry: inquiry._id } }
+          { $pull: { Inquiry: Inquiry._id } }
         );
 
-        return inquiry;
+        return Inquiry;
       }
       throw new AuthenticationError("You need to be logged in!");
     },
-    removeComment: async (parent, { inquiryId, commentId }, context) => {
+    removeComment: async (parent, { InquiryId, commentId }, context) => {
       if (context.user) {
-        return inquiry.findOneAndUpdate(
-          { _id: inquiryId },
+        return Inquiry.findOneAndUpdate(
+          { _id: InquiryId },
           {
             $pull: {
               comments: {
