@@ -1,5 +1,7 @@
 # Hire a Developy 
 
+## User Story
+
 As a Customer who wants to get a Web site done by a professional Web Developer
 
 I WANT TO be able to find a Web site where I can find a Web developer according to the level of technology,
@@ -61,7 +63,15 @@ I WOULD BE able to inquire and offer the contract.
 
 # Features to be added in Future 
 
-As we going through our work on project we realised some of the features to be added in future. This includes chatting facility on the same 
+As we going through our work on project we realized some of the features to be added in future. 
+
+This includes,
+
+    - Message dashboard
+
+    - Viewing profiles of both Customers and Developers
+
+    - Payment option at the end of the agreement of both Customer and Developer (Using Stripe)
 
 ## Obstacles 
 
@@ -71,11 +81,15 @@ As we going through our work on project we realised some of the features to be a
 
 - Linking issues with Front end and back end
 
+- Responsiveness issues with Tailwind CSS
+
+- Errors and missing files when Seeding and installing 
+
 ## Authors
 
 - Mark (Mainly Front End, Presentation)
 
-- Chamath (Mainly Back End, README file)
+- Chamath (Mainly Back End, README file, Presentation)
 
 
 ## Deployed URL
@@ -85,6 +99,9 @@ As we going through our work on project we realised some of the features to be a
 ## Github URL
 
   https://github.com/Chamath777/hire-a-developy
+
+## Heroku URL
+
 
 
 ## Presentation link
