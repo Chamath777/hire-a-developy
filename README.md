@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+Hire a Developy 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+As a Customer who wants to get a Web site done by a professional Web Developer
 
-## Available Scripts
+I WANT TO be able to find a Web site where I can find a Web developer according to the level of technology,
 
-In the project directory, you can run:
+SO THAT I can find a Developer according to their skill level.
 
-### `yarn start`
+WHEN I visit the level of technology,
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I WOULD BE able to find a Web Developer who has a skill of that technology.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+IF I WANT TO check the Web Developer's profile,
 
-### `yarn test`
+THEN I can visit their profile and see their portfolio.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+IF I WANT TO go ahead with the particular developer,
 
-### `yarn build`
+I WOULD BE able to inquire and offer the contract.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Introduction
 
-### `yarn eject`
+"Hire A Developy" is a Web Solution services providing web site. It is an E-Commerce website where customer can find a developer without any intermediate. Customer can browse the developer's profile and find the most suitable developer according to their requirements. Customer can inquire the Web Developer and clarify details before finalized the purchase.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Mock
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  ![sketch](./images/) 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Tools used
+   
+    🔗 MongoDB
+    
+    🔗 Express JS 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    🔗 REACT
+    
+    🔗 Node JS
 
-## Learn More
+    🔗 Tailwind CSS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Wire frame
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Home page
 
-### Code Splitting
+Categories
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contact Form
 
-### Analyzing the Bundle Size
+# Technology we use
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Other Resources
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Presentation link

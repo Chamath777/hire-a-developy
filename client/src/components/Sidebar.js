@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Logo from "../assets/images/logo.png";
 
-import Home from "../pages/Home";
-import Login from "../pages/Login";
+//import Home from "../pages/Home";
+//import Login from "../pages/Login";
 
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
